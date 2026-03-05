@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# J-Note 📝
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, cross-platform Note-Taking application built with React Native and Expo Router. J-Note offers a seamless and intuitive experience for users to manage their daily notes, ideas, and tasks with a clean, professional user interface.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
+- **User Authentication**: Secure Login and Registration system.
+- **Session Management**: "Remember Me" functionality utilizing async local storage.
+- **RESTful API Integration**: Connected to a robust backend service for real-time data syncing.
+- **Modern UI/UX**: Clean aesthetic with consistent typography, spacing, and custom-styled components.
+- **Cross-Platform**: Runs flawlessly on Android, iOS, and the Web.
+- **File-based Routing**: Utilizes Expo Router for smooth screen transitions and navigation.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [React Native](https://reactnative.dev/)
+- **Toolchain/Routing**: [Expo](https://expo.dev/) & [Expo Router](https://docs.expo.dev/router/introduction/)
+- **Network Requests**: [Axios](https://axios-http.com/)
+- **Local Storage**: `@react-native-async-storage/async-storage`
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v16 or newer recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- Expo Go app on your physical device OR an Android/iOS emulator
+
+### Installation
+
+1. **Clone the repository** (if you haven't already):
+   ```bash
+   git clone <your-repository-url>
+   cd NoteTakingApp
+   ```
+
+2. **Install dependencies**:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+   *or*
    ```bash
-   npx expo start
+   yarn install
    ```
 
-In the output, you'll find options to open the app in a
+3. **Configure the API endpoint** (if necessary):
+   Ensure your backend service (`note-api`) is running and accessible. Update the base URL in `src/services/api.ts` to match your local or production server.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Running the App
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Start the development server:
 
 ```bash
-npm run reset-project
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This will launch the Expo Metro bundler. From here, you can:
+- **Press `a`** to open on an Android emulator.
+- **Press `i`** to open on an iOS simulator.
+- **Press `w`** to open in a web browser.
+- **Scan the QR code** with the Expo Go app on your physical device.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📂 Project Structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```text
+NoteTakingApp/
+├── app/                  # Expo Router screens (login, register, notes, etc.)
+├── assets/               # Static assets (images, fonts)
+├── components/           # Generic Expo UI components
+├── src/
+│   ├── components/       # Custom app-specific UI components (Buttons, TextFields)
+│   ├── services/         # API configurations and network calls
+│   └── utils/            # Shared utilities and global theme configurations
+└── package.json          # Project metadata and dependencies
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🤝 Contributing
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/<your-username>/<your-repo-name>/issues).
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
