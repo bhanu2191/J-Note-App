@@ -1,95 +1,61 @@
-# J-Note 📝
+# J-Note — Full Stack Mobile Note Taking App
 
-A modern, cross-platform Note-Taking application built with React Native and Expo Router. J-Note offers a seamless and intuitive experience for users to manage their daily notes, ideas, and tasks with a clean, professional user interface.
+J-Note is a full-stack mobile note-taking application built using **React Native (Expo)** for the mobile frontend and **Jakarta EE (Payara)** for the REST API backend with a **MySQL database**.
 
----
+The project demonstrates modern mobile and backend development practices, including authentication, API communication, persistent login, and categorized note management.
 
-## 🚀 Features
+## Features
 
-- **User Authentication**: Secure Login and Registration system.
-- **Session Management**: "Remember Me" functionality utilizing async local storage.
-- **RESTful API Integration**: Connected to a robust backend service for real-time data syncing.
-- **Modern UI/UX**: Clean aesthetic with consistent typography, spacing, and custom-styled components.
-- **Cross-Platform**: Runs flawlessly on Android, iOS, and the Web.
-- **File-based Routing**: Utilizes Expo Router for smooth screen transitions and navigation.
+- User Registration with mobile number validation
+- Secure Login with token-based authentication
+- Remember Me functionality using AsyncStorage
+- Create and manage personal notes
+- Category-based notes (Work, Study, Personal, Ideas)
+- Sort notes by latest or oldest
+- Category icons for better visual organization
+- Responsive mobile UI with safe area support for notched phones
+- RESTful backend API built with Jakarta EE
+- MySQL database integration using JDBC
+- Mobile app communicates with backend using Axios
 
----
+## Architecture
 
-## 🛠️ Tech Stack
+Mobile App (React Native / Expo)
+⬇ REST API
+Jakarta EE Backend (Payara Server)
+⬇
+MySQL Database
 
-- **Framework**: [React Native](https://reactnative.dev/)
-- **Toolchain/Routing**: [Expo](https://expo.dev/) & [Expo Router](https://docs.expo.dev/router/introduction/)
-- **Network Requests**: [Axios](https://axios-http.com/)
-- **Local Storage**: `@react-native-async-storage/async-storage`
+## Tech Stack
 
----
+Frontend
+- React Native
+- Expo Router
+- Axios
+- AsyncStorage
+- Expo Vector Icons
 
-## 📦 Getting Started
+Backend
+- Jakarta EE (JAX-RS)
+- Payara Server
+- JDBC
+- Java
 
-### Prerequisites
+Database
+- MySQL
 
-Ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v16 or newer recommended)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-- Expo Go app on your physical device OR an Android/iOS emulator
+Tools
+- NetBeans / VS Code
+- Postman (API testing)
+- GitHub
 
-### Installation
+## Learning Outcomes
 
-1. **Clone the repository** (if you haven't already):
-   ```bash
-   git clone <your-repository-url>
-   cd NoteTakingApp
-   ```
+This project demonstrates:
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-   *or*
-   ```bash
-   yarn install
-   ```
-
-3. **Configure the API endpoint** (if necessary):
-   Ensure your backend service (`note-api`) is running and accessible. Update the base URL in `src/services/api.ts` to match your local or production server.
-
-### Running the App
-
-Start the development server:
-
-```bash
-npx expo start
-```
-
-This will launch the Expo Metro bundler. From here, you can:
-- **Press `a`** to open on an Android emulator.
-- **Press `i`** to open on an iOS simulator.
-- **Press `w`** to open in a web browser.
-- **Scan the QR code** with the Expo Go app on your physical device.
-
----
-
-## 📂 Project Structure
-
-```text
-NoteTakingApp/
-├── app/                  # Expo Router screens (login, register, notes, etc.)
-├── assets/               # Static assets (images, fonts)
-├── components/           # Generic Expo UI components
-├── src/
-│   ├── components/       # Custom app-specific UI components (Buttons, TextFields)
-│   ├── services/         # API configurations and network calls
-│   └── utils/            # Shared utilities and global theme configurations
-└── package.json          # Project metadata and dependencies
-```
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/<your-username>/<your-repo-name>/issues).
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
+- Mobile application development
+- REST API development
+- Backend integration
+- Authentication handling
+- Database interaction
+- Full-stack architecture
